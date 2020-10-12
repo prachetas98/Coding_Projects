@@ -1,0 +1,30 @@
+
+1. The first step to do is to type the command Echo $CLASSPATH to confirm that the java connector is available to connect to the program
+
+2. If not type the command: "export CLASSPATH=$CLASSPATH:./:/usr/share/java/mysql-connector-java.jar"
+
+3. After that compile the program by typing: "javac Lab5a_ex.java"
+
+4. The run the program by typing: "java Lab5a_ex"
+
+5. IN about 5 to 10 seconds you will see a panel appear that asks you to enter the MemberID. In here there are 2 possiblities. Either you enter a MemberID that already exists in the database or an MemberID that doesn't exist in the database.
+
+6
+a. If the MemberID already exists in the database: A new Panel will appear that asks you to do one of three options: Either you enter the ISBN of the book or you enter the name of the book or you enter the full name of the author
+
+b. If the MemberID does not exist in the database: A dialogBox will appear asking the user if you want to register using the memberID the user entered. If the user clicks on cancel, the user will exit the program. If the user clicks on OK, the a panel will appear asking the user to give 4 sets of data which is the MemberID, Last name, First name, Date of birth and the Gender.Then click on OK to add the record to the database
+
+7. In the new Panel where you will be asked to enter either the ISBN, the name of the book or the name of the author.
+
+a. If you enter the ISBN: Click OK after entering the ISBN and a table will appear telling you the name of the library and which shelf the book is on
+
+b. If you enter the name of the book: Click OK after entering the name of the book. It is ok to give the partial name of the book as well. Once you do that, a list of books that contains that title will appear. Here, pick the books that the user is interested in and click OK again. Then, the panel will give the library name and the self of the book the user selected
+
+c. If you enter the the name of the Author: Click OK after entering the name of the Author. You must enter the full name to get a list of the books the Author wrote. Then, a list of books the author wrote will appear. Then, select the book the user is particularly interested in. The again click OK and the library name and shelf will appear.
+
+8. Once you finish finding out the library name and shelf click Ok and you will return to the beginning of the program where the user is asked to enter the memberID.
+
+For error handling:
+1. When the user enters an ISBN or book name or the Author name and picks the book they want, if the number of copies available are 0, then a message will appear saying that all the books are checked out
+
+2. If there are no such books that much the ISBN or the book name or the author name given by the user, a message will be outputed saying that there are no books in stock  
