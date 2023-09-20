@@ -33,6 +33,7 @@ void MinHeap::insertKey(city& k)
 		swap(harr[i], harr[parent(i)]);
 		i = parent(i);
 	}
+	cout << "The function finds the minimum heaps" << endl;
 }
 
 // Decreases value of key at index 'i' to new_val.  It is assumed that 
